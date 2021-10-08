@@ -1,0 +1,142 @@
+* {
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+html {
+  /* Image doesn't work for some reason, so i put background color instead */
+  /* background-image: url("./images/pattern-background-desktop.svg"); */
+  background-color: #b9c5c8;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 100px;
+}
+.card {
+  border: 0px solid transparent;
+  border-radius: 15px;
+  text-align: center;
+  display: inline;
+  background-color: #fff;
+}
+.card .content h2 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card .content p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.card .content p span {
+  font-weight: bold;
+  color: black;
+}
+.card img {
+  border: 1px solid transparent;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  width: 99%;
+  overflow: hidden;
+}
+.card p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.card .offer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+.offer img {
+  padding-left: 15px;
+  width: 15%;
+  height: 15%;
+  margin-top: 5px;
+  margin-right: -20px;
+}
+.offer .text {
+  margin-bottom: 10px;
+  margin-left: -30px;
+}
+
+.offer .price {
+  grid-area: price;
+  padding-top: -5px;
+}
+.offer .change-button {
+  grid-area: button;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding-right: -30px;
+  margin-left: 10px;
+}
+
+.offer .change-button a {
+  color: hsl(223, 47%, 23%);
+  padding-right: 35px;
+}
+.offer .change-button a:hover {
+  color: #8b4ded;
+  transition: 0.3s;
+}
+.card .offer img {
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+.card .proceed-btn a {
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  perspective: 1px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: hsl(223, 47%, 23%);
+  color: #fff;
+  font-weight: bold;
+}
+.card .proceed-btn a:hover {
+  background-color: #8b4ded;
+  color: #fff;
+  border: 1px solid #8b4ded;
+  transition: 0.3s;
+}
+
+.card .cancel-btn {
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.card .cancel-btn a {
+  color: black;
+  font-weight: bold;
+}
+.card .cancel-btn a:hover {
+  color: #b9c5c8;
+  font-weight: normal;
+  transition: 0.2s;
+}
